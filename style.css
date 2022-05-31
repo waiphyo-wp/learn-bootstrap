@@ -1,0 +1,104 @@
+.menu {
+    background-color: #2C2D3A;
+    box-shadow: 0 10px 10px #DEE0E6;
+}
+
+.menu .navbar-nav .nav-item .nav-link {
+    font-size: 20px;
+    font-family: 'Quintessential', cursive, 'Roboto', sans-serif;
+}
+
+.menu .navbar-nav .nav-item .nav-link:hover {
+    color:green
+}
+
+.carousel-img {
+    width: 1300px;
+    height: 350px;
+    padding: 0px 100px;
+    border-radius: 5px;
+    background-color: #2C2D3A;
+}
+
+a .fa-stack:hover {
+    transition: 0.9s;
+    transform: rotate(360deg);
+}
+
+a .fa-stack {
+    color: green;
+}
+
+/* divider */
+hr.divider {
+    max-width: 5.25rem;
+    border: 1px solid green;
+    margin: 0 auto;
+}
+
+hr.item-divider {
+    max-width: 7.25rem;
+    border: 1px solid green;
+    margin: 0 auto;
+}
+
+.img-icon {
+    transition: .9s ease;
+    opacity: 0;
+    top: 20%;
+    left: 40%;
+    bottom: 0;
+    /* transform: translate(-40%,-40%); */
+    position: absolute;
+    text-align: center;
+
+}
+
+.card-img:hover {
+    transition: 0.9s;
+    opacity: 0.3;
+}
+
+.card-img:hover + .img-icon {
+    /* color: green; */                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+    opacity: 1;
+}
+
+.img-icon:hover + .fa-stack{
+    color: green;
+    cursor: pointer;
+}
+
+.contact {
+    background-image: url(images/4.jpg);
+    position: relative;
+    z-index: 1;
+}
+
+.contact:before {
+    content: '';
+    background-color: #000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#count .p1[data-count]:after {
+    position: absolute;
+    right: 10%;
+    top: 8%;
+    content: attr(data-count);
+    font-size: 70%;
+    padding: .2em;
+    border-radius: 50%;
+    line-height: 1em;
+    color: white;
+    background: rgba(255, 0, 0, .85);
+    text-align: center;
+    min-width: 1em;
+    font-weight: bold;
+}
